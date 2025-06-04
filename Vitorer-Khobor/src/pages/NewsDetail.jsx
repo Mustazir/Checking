@@ -22,10 +22,10 @@ function NewsDetail() {
       <img
         src={news.image}
         alt={news.title}
-        className="w-[500px]  object-cover rounded"
+        className="w-[500px]  object-cover rounded flex mx-auto"
       />
       <h1 className="text-3xl font-bold mt-4">{news.title}</h1>
-      <p className="text-gray-700 mt-2">{news.content}</p>
+      <p className="text-gray-700 mt-2" style={{ whiteSpace: 'pre-line' }}>{news.content}</p>
     </div>
   );
 }
